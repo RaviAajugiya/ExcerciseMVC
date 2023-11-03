@@ -25,14 +25,14 @@ namespace MVC_Vidly.Controllers
         // GET: Movie
         public ActionResult Movie()
         {
-            var movies = _context.movies.Include(m => m.Genre).ToList();
-            return View(movies);
+            //var movies = _context.movies.Include(m => m.Genre).ToList();
+            return View();
         }
 
         public ActionResult Details(int id)
         {
-            var movie = _context.movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
-            return View(movie);
+            //var movie = _context.movies.Include(m => m.Genre).SingleOrDefault(m => m.Id == id);
+            return View();
         }
 
 
